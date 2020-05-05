@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <body>
   <div id="root"></div>
-</body>
-<script type="text/javascript">
-  const rootElement = document.getElementById('root')
+  <script type="text/javascript">
+    const rootElement = document.getElementById('root')
+    
+    const element = document.createElement('div')
+    element.textContent = 'Halo Ini Elemen dari DOM'
+    element.className = 'container'
   
-  const element = document.createElement('div')
-  element.textContent = 'Halo Ini Elemen dari DOM'
-  element.className = 'container'
-
-  rootElement.appendChild(element)
-</script>
+    rootElement.appendChild(element)
+  </script>
+</body>
