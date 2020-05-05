@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+  <div id="root"></div>
+  
+  <!--  Import React & React DOM library-->
+  <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+
+  <!-- Our Code-->
+  <script type="text/javascript">
+      const rootElement = document.getElementById('root')
+
+      const element = React.createElement('div', {
+        children : React.createElement('span', {className : 'greet'}, 'Halo Dunia Ini, React Create Element'),
+        className : 'container'
+      })
+
+      ReactDOM.render(element, rootElement)
+
+  </script>
+</body>
