@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body>
+  <div id="root"></div>
+  
+  <!--  Import React & React DOM library-->
+  <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+
+  <!-- Import Babel -->
+  <script src="https://unpkg.com/@babel/standalone@7.9.6/babel.min.js"></script>
+
+  <!-- Our Code-->
+  <script type="text/babel">
+      const rootElement = document.getElementById('root')
+
+      // React Fragment
+      const helloWorld = React.createElement('span', null, 'Halo Dunia')
+      const greet = React.createElement('span', null, 'Apa Kabar?')
+
+      const element =  React.createElement(
+        React.Fragment,
+        null,
+        helloWorld,
+        ' ',
+        greet
+      )
+
+      // JSX + React Fragmant (<> </> is shorthand for React Fragment)
+
+      const name = 'Roni Ardiyanto'
+      const morningGreet = 'Selamat Pagi'   
+      const jsxElement = (<>
+      <span>{morningGreet}</span> <span>{name}</span>
+      </>)
+
+      ReactDOM.render(jsxElement, rootElement)
+  </script>
+</body>
